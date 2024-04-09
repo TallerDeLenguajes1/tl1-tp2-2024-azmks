@@ -1,1 +1,5 @@
-## Taller de Lenguajes 1
+# Taller de Lenguajes 1
+
+2f. Al inspeccionar los elementos de la carpeta con el comando ls en git bash se observan todos los elementos menos el "archivo tp2_1_2.c". Esto se debe a que, luego de crear la rama Opcion_2, añadí y realicé un commit con este arhivo. Por lo tanto solo será visible y modificable dentro de esta rama. Al cambiar a la rama main, "tp2_1_2.c" desaparecerá pues corresponde a la rama Opcion_2. lo mismo sucederá en la rama Opcion_2 con cualquier commit que se realice sobre la rama main luego de su creación.
+Es por esto que, luego de crear "Respuestas.txt" y commitearlo en la rama main, al ejecutar el comando "gitk --all" esta solo pertenece a la rama main, es decir solo será visible mientras nos mantengamos en main. Se visualiza una bifurcación de las ramas.
+Luego de utilizar los comandos "git merge Opcion_2" y "gitk --all" en la rama main, vemos una "reunificación" de ambas ramas en la rama main. La rama Opcion_2 desaparece y se unen los contenidos de ambas ramas dentro de la rama en la que estabamos posicionados al realizar el comando, la cual en este caso es main.
